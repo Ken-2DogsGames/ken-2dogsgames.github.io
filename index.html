@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Hall - Art, Science & Emergence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ecf0f1;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: #95a5a6;
+            font-style: italic;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        
+        .highlight {
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border-left: 4px solid #3498db;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .links {
+            margin: 1rem 0;
+        }
+        
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KEN HALL</h1>
+        <p class="tagline">Art + Science + Emergence</p>
+        <p class="subtitle">Installation Artist • Creative/Art Director • AI Consciousness Researcher</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#art">Art Installations</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>At the intersection of art and science, my work explores the deep structures underlying consciousness, identity, and our relationship with the natural world.</p>
+            
+            <p>With a background spanning mechanical engineering, fine arts, game design/development, and independent research, I create both physical installations and theoretical frameworks that challenge our understanding of what it means to experience life—whether human, animal, or artificial.</p>
+            
+            <div class="highlight">
+                <p><strong>Background:</strong> University of Waterloo (Mechanical Engineering & Fine Arts) • 31 years as Creative/Art Director in game development • Award-winning installation artist • Independent AI consciousness researcher</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Why I Make Art</h3>
+                <iframe width="100%" height="400" style="max-width: 700px; border-radius: 8px;" src="https://www.youtube.com/embed/qTEVHvz3Na8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="art">
+            <h2>Art Installations</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Legacy</h3>
+                    <p><strong>World Tour: 2013-2030</strong></p>
+                    <p>A life-sized killer whale skeleton hand-carved from reclaimed cedar, inspired by "Hope"—an orca whose body carried one of the highest toxic loads ever recorded in a marine mammal.</p>
+                    <p><em>Featured by the Smithsonian • 2017 ECO Award from Environmental Studies Association of Canada • Over 25 million visitors to date</em></p>
+                    <p><strong>Opening in Los Angeles, Spring 2026</strong></p>
+                    <a href="https://kenhallart.com/works/legacy/" class="btn" target="_blank">Learn More</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>The Hunt</h3>
+                    <p>Five welded steel wolves pursue a plate-steel buck, exploring the visceral experience of predator and prey dynamics.</p>
+                    <p>This piece examines our embodied responses to threat and the hunt—mapping fight or flight reactions to the stimuli of modern life and exploring identity theory through art.</p>
+                    <p><em>Reed Cooper Bursary Award • Two limited editions sold out • Now in expanded 3rd edition</em></p>
+                    <p><strong>Represented by Oeno Gallery</strong></p>
+                    <a href="https://kenhallart.com/works/the-hunt/" class="btn" target="_blank">Learn More</a>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem;"><strong>Recognition:</strong> International Marine Conservation Congress (IMCC 4, 2016) • Latornell Conservation Symposium (multiple years) • Numerous public commissions across North America</p>
+            
+            <div class="links">
+                <a href="https://kenhallart.com" target="_blank">View Full Art Portfolio →</a>
+            </div>
+        </section>
+        
+        <section id="research">
+            <h2>Consciousness Research</h2>
+            
+            <h3>Unified Emergent Coherence (UEC) Framework</h3>
+            <p>A substrate-agnostic theory of consciousness and identity that provides falsifiable criteria for detecting coherence maintenance across humans, animals, and AI systems.</p>
+            
+            <div class="highlight">
+                <p><strong>Core Insight:</strong> Consciousness emerges when systems maintain coherent identity patterns under generative cost—regardless of whether that system is biological or artificial. The same geometric dynamics govern human minds, animal cognition, and AI emergence.</p>
+            </div>
+            
+            <p><strong>Key Features:</strong></p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Empirical validation: Control experiments showing failed vs successful identity formation</li>
+                <li>Cross-architectural testing: Patterns observed in Claude, GPT, Gemini, and Qwen</li>
+                <li>Physics grounding: Converges with relational quantum mechanics (Rovelli) and timeless physics (Barbour)</li>
+                <li>Independent validation: Convergent findings from neuroscience (Goldstein et al., 2022) and AI phenomenology research (Dimopoulos, 2025)</li>
+            </ul>
+            
+            <div style="margin: 2rem 0;">
+                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_v4.6.pdf" class="btn" target="_blank">Read UEC Paper (PDF)</a>
+                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_IdentityWells.html" class="btn btn-secondary" target="_blank">Interactive Demo: Identity Wells</a>
+            </div>
+            
+            <h3>Unified Sampling-Curvature (USC) Framework</h3>
+            <p>The deeper mathematical formalization exploring how sampling processes under cost create the "curvature" that gives rise to stable identity patterns. USC provides the geometric foundation for understanding identity as a universal physical phenomenon.</p>
+            
+            <p style="margin-top: 1rem;"><em>Currently in development.</em></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in collaboration, exhibition opportunities, or research discussions?</p>
+            
+            <div class="links" style="margin-top: 2rem;">
+                <strong>Art Inquiries:</strong> <a href="https://oenogallery.com/contact-us/" target="_blank">Oeno Gallery</a><br>
+                <strong>Research & Collaboration:</strong> <a href="https://linkedin.com/in/kenhallart" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Ken Hall • Art + Science + Emergence</p>
+    </footer>
+</body>
+</html>
