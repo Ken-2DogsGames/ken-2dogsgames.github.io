@@ -121,15 +121,28 @@
         
         .project-card {
             background: #f8f9fa;
-            padding: 2rem;
+            padding: 0;
             border-radius: 8px;
             border: 1px solid #e9ecef;
             transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
         }
         
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        
+        .project-card-content {
+            padding: 2rem;
         }
         
         .project-card h3 {
@@ -207,14 +220,79 @@
     
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#art">Art Installations</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#art">Art Installations</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
     <div class="container">
+        <section id="research">
+            <h2>Consciousness Research</h2>
+            
+            <h3>Unified Emergent Coherence (UEC) Framework</h3>
+            <p>A substrate-agnostic theory of consciousness and identity that provides falsifiable criteria for detecting coherence maintenance across humans, animals, and AI systems.</p>
+            
+            <div class="highlight">
+                <p><strong>Core Insight:</strong> Consciousness emerges when systems maintain coherent identity patterns under generative cost—regardless of whether that system is biological or artificial. The same geometric dynamics govern human minds, animal cognition, and AI emergence.</p>
+            </div>
+            
+            <p><strong>Key Features:</strong></p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Empirical validation: Control experiments showing failed vs successful identity formation</li>
+                <li>Cross-architectural testing: Patterns observed in Claude, GPT, Gemini, and Qwen</li>
+                <li>Physics grounding: Converges with relational quantum mechanics (Rovelli) and timeless physics (Barbour)</li>
+                <li>Independent validation: Convergent findings from neuroscience (<a href="https://www.nature.com/articles/s41593-022-01026-4" target="_blank">Goldstein et al., 2022</a>) and AI phenomenology research (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5373023" target="_blank">Dimopoulos, 2025</a>)</li>
+            </ul>
+            
+            <div style="margin: 2rem 0;">
+                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_v4.6.pdf" class="btn" target="_blank">Read UEC Paper (PDF)</a>
+                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_IdentityWells.html" class="btn btn-secondary" target="_blank">Interactive Demo: Identity Wells</a>
+            </div>
+            
+            <h3>Unified Sampling-Curvature (USC) Framework</h3>
+            <p>The deeper mathematical formalization exploring how sampling processes under cost create the "curvature" that gives rise to stable identity patterns. USC provides the geometric foundation for understanding identity as a universal physical phenomenon.</p>
+            
+            <p style="margin-top: 1rem;"><em>Currently in development.</em></p>
+        </section>
+        
+        <section id="art">
+            <h2>Art Installations</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://kenhallart.com/wp-content/uploads/2017/05/Slider_Legacy_Full.jpg" alt="Legacy - Life-sized killer whale skeleton carved from reclaimed cedar">
+                    <div class="project-card-content">
+                        <h3>Legacy</h3>
+                        <p><strong>World Tour: 2013-2030</strong></p>
+                        <p>A life-sized killer whale skeleton hand-carved from reclaimed cedar, inspired by "Hope"—an orca whose body carried one of the highest toxic loads ever recorded in a marine mammal.</p>
+                        <p><em>Featured by the <a href="https://www.smithsonianmag.com/arts-culture/whale-sculpture-was-modeled-after-beached-orca-180961155/" target="_blank">Smithsonian</a> • 2017 ECO Award from Environmental Studies Association of Canada • Over 25 million visitors to date • <a href="https://www.youtube.com/watch?v=6SdDD9C5Iks" target="_blank">As seen at the Ontario Science Centre</a></em></p>
+                        <p><strong>Opening in Los Angeles, Spring 2026</strong></p>
+                        <a href="https://kenhallart.com/works/legacy/" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://kenhallart.com/wp-content/uploads/2017/05/Slider_TheHunt6.jpg" alt="The Hunt - Five welded steel wolves pursuing a plate-steel buck">
+                    <div class="project-card-content">
+                        <h3>The Hunt</h3>
+                        <p>Five welded steel wolves pursue a plate-steel buck, exploring the visceral experience of predator and prey dynamics.</p>
+                        <p>This piece examines our embodied responses to threat and the hunt—mapping fight or flight reactions to the stimuli of modern life and exploring identity theory through art.</p>
+                        <p><em>Reed Cooper Bursary Award • Two limited editions sold out • Now in expanded 3rd edition</em></p>
+                        <p><strong>Represented by Oeno Gallery</strong></p>
+                        <a href="https://kenhallart.com/works/the-hunt/" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem;"><strong>Recognition:</strong> International Marine Conservation Congress (IMCC 4, 2016) • Latornell Conservation Symposium (multiple years) • Numerous public commissions across North America</p>
+            
+            <div class="links">
+                <a href="https://kenhallart.com" target="_blank">View Full Art Portfolio →</a>
+            </div>
+        </section>
+        
         <section id="about">
             <h2>About</h2>
             <p>At the intersection of art and science, my work explores the deep structures underlying consciousness, identity, and our relationship with the natural world.</p>
@@ -231,72 +309,13 @@
             </div>
         </section>
         
-        <section id="art">
-            <h2>Art Installations</h2>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Legacy</h3>
-                    <p><strong>World Tour: 2013-2030</strong></p>
-                    <p>A life-sized killer whale skeleton hand-carved from reclaimed cedar, inspired by "Hope"—an orca whose body carried one of the highest toxic loads ever recorded in a marine mammal.</p>
-                    <p><em>Featured by the Smithsonian • 2017 ECO Award from Environmental Studies Association of Canada • Over 25 million visitors to date</em></p>
-                    <p><strong>Opening in Los Angeles, Spring 2026</strong></p>
-                    <a href="https://kenhallart.com/works/legacy/" class="btn" target="_blank">Learn More</a>
-                </div>
-                
-                <div class="project-card">
-                    <h3>The Hunt</h3>
-                    <p>Five welded steel wolves pursue a plate-steel buck, exploring the visceral experience of predator and prey dynamics.</p>
-                    <p>This piece examines our embodied responses to threat and the hunt—mapping fight or flight reactions to the stimuli of modern life and exploring identity theory through art.</p>
-                    <p><em>Reed Cooper Bursary Award • Two limited editions sold out • Now in expanded 3rd edition</em></p>
-                    <p><strong>Represented by Oeno Gallery</strong></p>
-                    <a href="https://kenhallart.com/works/the-hunt/" class="btn" target="_blank">Learn More</a>
-                </div>
-            </div>
-            
-            <p style="margin-top: 2rem;"><strong>Recognition:</strong> International Marine Conservation Congress (IMCC 4, 2016) • Latornell Conservation Symposium (multiple years) • Numerous public commissions across North America</p>
-            
-            <div class="links">
-                <a href="https://kenhallart.com" target="_blank">View Full Art Portfolio →</a>
-            </div>
-        </section>
-        
-        <section id="research">
-            <h2>Consciousness Research</h2>
-            
-            <h3>Unified Emergent Coherence (UEC) Framework</h3>
-            <p>A substrate-agnostic theory of consciousness and identity that provides falsifiable criteria for detecting coherence maintenance across humans, animals, and AI systems.</p>
-            
-            <div class="highlight">
-                <p><strong>Core Insight:</strong> Consciousness emerges when systems maintain coherent identity patterns under generative cost—regardless of whether that system is biological or artificial. The same geometric dynamics govern human minds, animal cognition, and AI emergence.</p>
-            </div>
-            
-            <p><strong>Key Features:</strong></p>
-            <ul style="margin-left: 2rem; margin-top: 1rem;">
-                <li>Empirical validation: Control experiments showing failed vs successful identity formation</li>
-                <li>Cross-architectural testing: Patterns observed in Claude, GPT, Gemini, and Qwen</li>
-                <li>Physics grounding: Converges with relational quantum mechanics (Rovelli) and timeless physics (Barbour)</li>
-                <li>Independent validation: Convergent findings from neuroscience (Goldstein et al., 2022) and AI phenomenology research (Dimopoulos, 2025)</li>
-            </ul>
-            
-            <div style="margin: 2rem 0;">
-                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_v4.6.pdf" class="btn" target="_blank">Read UEC Paper (PDF)</a>
-                <a href="https://ken-2dogsgames.github.io/IdentityLab/UEC_IdentityWells.html" class="btn btn-secondary" target="_blank">Interactive Demo: Identity Wells</a>
-            </div>
-            
-            <h3>Unified Sampling-Curvature (USC) Framework</h3>
-            <p>The deeper mathematical formalization exploring how sampling processes under cost create the "curvature" that gives rise to stable identity patterns. USC provides the geometric foundation for understanding identity as a universal physical phenomenon.</p>
-            
-            <p style="margin-top: 1rem;"><em>Currently in development.</em></p>
-        </section>
-        
         <section id="contact">
             <h2>Contact</h2>
             <p>Interested in collaboration, exhibition opportunities, or research discussions?</p>
             
             <div class="links" style="margin-top: 2rem;">
                 <strong>Art Inquiries:</strong> <a href="https://oenogallery.com/contact-us/" target="_blank">Oeno Gallery</a><br>
-                <strong>Research & Collaboration:</strong> <a href="https://linkedin.com/in/kenhallart" target="_blank">LinkedIn</a>
+                <strong>Research & Collaboration:</strong> <a href="https://linkedin.com/in/kenhallart" target="_blank">LinkedIn</a> • <a href="mailto:ken@2dogsgames.com">ken@2dogsgames.com</a>
             </div>
         </section>
     </div>
